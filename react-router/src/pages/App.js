@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, IndexLink } from 'react-router';
 
 export default class App extends React.Component {
     constructor() {
@@ -11,7 +11,9 @@ export default class App extends React.Component {
             <div>
                 <nav className="nav has-shadow">
                     <div className="nav-left">
-                        <a href="#" className="nav-item is-tab">Home</a>
+                        <IndexLink to="/"
+                            className="nav-item is-tab"
+                            activeClassName="is-active">Home</IndexLink>
                         <Link to="/cursos"
                             className="nav-item is-tab"
                             activeClassName="is-active">Cursos</Link>
