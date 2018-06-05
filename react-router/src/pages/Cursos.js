@@ -7,7 +7,10 @@ export default class Cursos extends React.Component {
 
     render() {
         return (
-            <h1 className="title" > Cursos</h1 >
+            <div>
+                <h1 className="title" >Cursos</h1>
+                {this.props.children}
+            </div>
         );
     }
 }
