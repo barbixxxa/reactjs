@@ -1,2 +1,0 @@
-# React Project Tutorial - Game of Life
-[freeCodeCamp](https://www.youtube.com/watch?v=PM0_Er3SvFQ)
