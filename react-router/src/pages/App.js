@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class App extends React.Component {
     constructor() {
@@ -8,11 +9,15 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <nav className="nav is-tab has-shadow">
+                <nav className="nav has-shadow">
                     <div className="nav-left">
-                        <a href="#" className="nav-item">Home</a>
-                        <a href="#" className="nav-item">Cursos</a>
-                        <a href="#" className="nav-item">Sobre</a>
+                        <a href="#" className="nav-item is-tab">Home</a>
+                        <Link to="/cursos"
+                            className="nav-item is-tab"
+                            activeClassName="is-active">Cursos</Link>
+                        <Link to="/sobre"
+                            className="nav-item is-tab"
+                            activeClassName="is-active">Sobre</Link>
                     </div>
                 </nav>
 
